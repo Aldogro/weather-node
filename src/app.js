@@ -7,7 +7,7 @@ const forecast = require('./utils/forecast')
 const app = express()
 
 
-// Paths
+// Paths de toto
 const appPublicPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
