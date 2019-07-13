@@ -8,7 +8,7 @@
     const location = search.value
     
     const ciudad = location
-    const url = `http://localhost:3000/weather?adress=${ciudad}`
+    const url = `/weather?adress=${ciudad}`
     resultado.innerHTML = `Cargando...`
     
     fetch(url)
