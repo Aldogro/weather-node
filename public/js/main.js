@@ -17,12 +17,12 @@
         .then((data) => {
           console.log(data)
           if(data.error){
-            resultado.innerHTML = `${data.error}`
+            resultado.innerHTML = `<b>${data.error}</b>`
           } else {
-            resultado.innerHTML = `El clima en ${data.location} es:
-            Temperatura: ${data.forecast.temp},
-            Humedad: ${data.forecast.hum},
-            Resumen: ${data.forecast.res}
+            resultado.innerHTML = `<b>El clima en ${data.location} es:</b>
+            <b>Temperatura:</b> ${data.forecast.temp} °C,
+            <b>Humedad:</b> ${data.forecast.hum * 100}%,
+            <b>Resumen:</b> ${data.forecast.res}
             `
             search.value = ''
           }
