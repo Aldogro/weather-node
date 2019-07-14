@@ -20,11 +20,13 @@ const forecast = (long, lat, callback) => {
     
     } else {
 
-      const{temperature:temp, summary:res, humidity:hum} = body.currently
+      const{temperature:temp, summary:res, humidity:hum, apparentTemperature: st, pressure:pres} = body.currently
       callback( undefined, {
         temp,
         res,
-        hum}
+        hum,
+        st,
+        pres}
       )
     }
   })
