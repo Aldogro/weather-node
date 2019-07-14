@@ -20,8 +20,8 @@
             resultado.innerHTML = `<b>${data.error}</b>`
           } else {
             resultado.innerHTML = `<p><b>El clima en ${data.location} es:</b></p>
-            <b>Temperatura:</b> ${data.forecast.temp} °C,<br>
-            <b>Humedad:</b> ${data.forecast.hum * 100}%,<br>
+            <b>Temperatura:</b> ${data.forecast.temp} °C<br>
+            <b>Humedad:</b> ${data.forecast.hum * 100}%<br>
             <b>Resumen:</b> ${data.forecast.res}
             `
             search.value = ''
