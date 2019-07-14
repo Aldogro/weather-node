@@ -21,14 +21,14 @@ hbs.registerPartials(partialsPath)
 
 app.get('', (req, res) => {
   res.render('index', {
-    title: 'Weather App',
+    title: 'Clima',
     name: 'Aldo Rojas'
   })
 })
 
 app.get('/about', (req, res) => {
   res.render('about', {
-    title: 'About',
+    title: 'Acerca de...',
     name: 'Aldo Rojas'
   })
 })
@@ -36,7 +36,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req,res) => {
   res.render('help', {
     name: 'Aldo Rojas',
-    title: 'Help',
+    title: 'Ayuda',
     text: 'Aca podes encontrar ayuda acerca de lo que quieras...'
   })
 })
@@ -68,7 +68,7 @@ app.get('/weather', (req, res) => {
 app.get('/products', (req, res) => {
   if(!req.query.search){
     return res.send({
-      error: 'You must provide a search term...'
+      error: 'Deberías darnos algo para buscar...'
     })
   }
   res.send({
